@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Political Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Political Survey Form</h1>
+            <p id="description">This survey aims to show the Turkish peoples perceptions to the public.</p>
+            <p style="margin-top: 0;"> Please fill the form to help.</p>
+        </header>
+        <form method="post" id="survey-form">
+            <fieldset style="overflow: hidden; padding-right: 1.2em;">
+                <label style="width: 40%; float: left;" id="name-label" for="name">
+                    Name:*
+                    <input required id="name" type="text" placeholder="John Doe">
+                </label>
+
+                <label style="width: 40%; float: right;" id="email-label" for="mail">
+                    Email:*
+                    <input required id="email" type="email" placeholder="johndoe@email.com">
+                </label>
+
+                <label id="number-label" style="width: 40%; float: left;" for="number-label">Age:
+                    <input id="number" type="number" min="0" max="31" placeholder="31">
+                </label>
+
+                <label style="width: 40%; float: right;">Please select your gender
+                    <select id="dropdown">
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                        <option value="2">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <fieldset id="parties">
+                <legend>Please select your appropriate political party*</legend>
+
+
+                <label for="arab"><input id="arab" class="inline" type="radio" name="party" value="arab"
+                        checked>Enrichment Of Arabs Party</label>
+
+                <label for="soclib"><input id="soclib" class="inline" type="radio" name="party" value="soclib">Social
+                    Liberal Kurd Lover Party</label>
+
+                <label for="dem"><input id="dem" class="inline" type="radio" name="party" value="dem">Kurdist
+                    Party</label>
+
+                <label for="mhp"><input id="mhp" class="inline" type="radio" name="party" value="mhp">Free Öcalan
+                    Turkist Party</label>
+
+                <label for="zp"><input id="zp" class="inline" type="radio" name="party" value="zp">Niggers and
+                    Armenians' Ataturkist Party</label>
+
+                <label for="communist"><input id="communist" class="inline" type="radio" name="party"
+                        value="communist">Communist Party</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What do you think are the main urgent problems of Turkey?</legend>
+                <label for="immigrants">
+                    <input id="immigrants" class="inline" type="checkbox" name="immigrants" value="immigrants"> 17+
+                    million refugees
+                </label>
+                <label for="economy">
+                    <input id="economy" class="inline" class="inline" type="checkbox" name="economy" value="economy">
+                    Economy
+                </label>
+                <label for="terrorists">
+                    <input id="terrorists" class="inline" type="checkbox" name="terrorists" value="terrorists">
+                    Terrorists and foreign
+                    threats
+                </label>
+                <label for="justice">
+                    <input id="justice" class="inline" type="checkbox" name="justice" value="justice"> Corrupt Justice
+                    System
+                </label>
+                <label for="education">
+                    <input id="education" class="inline" type="checkbox" name="education" value="education"> Education
+                </label>
+            </fieldset>
+
+            <label for="additional-comments">Is there anything else you'd like to add?
+                <textarea id="additional-comments" name="additional-comments"
+                    placeholder="Your comments here..."></textarea>
+            </label>
+
+            <label for="terms-and-conditions">
+                <input required id="terms-and-conditions" class="inline" type="checkbox" name="terms-and-conditions"
+                    value="terms-and-conditions">I accept the <a
+                    href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and
+                    conditions</a></label>
+
+            <input id="submit" type="submit">
+        </form>
+</body>
+</main>
+
+</html>
